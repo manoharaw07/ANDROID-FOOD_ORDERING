@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="fragments.OrderHistoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/msg"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Your previous order are listed below:"
+        android:textAlignment="center"
+
+        android:textSize="18dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/msg"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerOrderHistoryFragment"
+        android:layout_below="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

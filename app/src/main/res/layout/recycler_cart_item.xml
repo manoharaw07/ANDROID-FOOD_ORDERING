@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="gdjsfvh"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:id="@+id/itemName"
+            android:drawableLeft="@drawable/ic_buletin"
+            android:layout_marginLeft="10dp"
+
+           ></TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="gdjsfvh"
+            android:id="@+id/itemPrice"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:drawableLeft="@drawable/ic_rupee"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+
+            ></TextView>
+    </RelativeLayout>
+
+
+</LinearLayout>

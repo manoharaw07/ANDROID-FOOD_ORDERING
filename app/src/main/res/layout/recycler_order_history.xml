@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/restName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        tools:ignore="InvalidId"></TextView>
+
+
+    <TextView
+        android:id="@+id/orderDate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/restName"
+        android:padding="5dp"
+
+        android:textColor="#000000"
+        android:textSize="16dp"
+        tools:ignore="InvalidId"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerOrderHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restName"
+        android:layout_marginTop="5dp"></androidx.recyclerview.widget.RecyclerView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+       android:layout_below="@+id/recyclerOrderHistory"
+
+        android:textColor="#000000"
+        android:background="@android:color/darker_gray"/>
+</RelativeLayout>

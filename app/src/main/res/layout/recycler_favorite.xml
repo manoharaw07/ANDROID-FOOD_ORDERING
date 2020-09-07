@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardfavview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal"
+    app:cardCornerRadius="2dp">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rlContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgfavrest"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:src="@color/colorAccent"></androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvrestfavName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/imgfavrest"
+            android:padding="10dp"
+            android:text="dev giri"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvrestfavCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvrestfavName"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="1dp"
+            android:drawableLeft="@drawable/ic_rupee"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/imgfavrest"
+            android:padding="10dp"
+            android:text="dev giri"
+            android:textSize="16dp"></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+        <ToggleButton
+            android:id="@+id/btnfavfav"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="7dp"
+
+            android:background="@drawable/ic_non_favourite"
+            android:textOff="  "
+            android:textOn="  ">
+
+        </ToggleButton>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvrestfavRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="8dp"
+            android:text="4.5"
+            android:textColor="	#FFDF00"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

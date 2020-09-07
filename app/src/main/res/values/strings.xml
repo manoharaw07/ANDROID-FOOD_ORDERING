@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="preference_file_name">Login Details</string>
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="favorite_restaurents">Favorite Restaurents</string>
+    <string name="faqs">FAQs</string>
+    <string name="closed_drawer">openDrawer</string>
+    <string name="open_drawer">openDrawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name</string>
+</resources>

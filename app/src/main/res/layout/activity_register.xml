@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="activity.RegisterActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlContent"
+        android:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_below="@+id/rlContent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edit_text"
+        android:drawableLeft="@drawable/ic_name"
+        android:hint="Name(min 3 character)"
+        android:inputType="text"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp" />
+    <EditText
+    android:id="@+id/etEmail"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" android:drawableLeft="@drawable/ic_email"
+
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/etName"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/edit_text"
+    android:hint="Email Address"
+    android:inputType="textEmailAddress"
+    android:maxLength="30"
+    android:maxLines="1"
+    android:paddingLeft="20dp"
+    android:textColor="#000000"
+    android:textColorHint="#000000"
+    android:textSize="20sp"
+        tools:ignore="UnknownId" />
+    <EditText
+    android:id="@+id/etMobileNumber"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+android:drawableLeft="@drawable/ic_phone"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/etEmail"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/edit_text"
+    android:hint="Mobile number"
+    android:inputType="phone"
+    android:maxLength="10"
+    android:maxLines="1"
+
+    android:paddingLeft="20dp"
+    android:textColor="#000000"
+    android:textColorHint="#000000"
+    android:textSize="20sp"
+    tools:ignore="UnknownId" />
+    <EditText
+    android:id="@+id/etDeliveryadd"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+android:drawableLeft="@drawable/ic_location"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/etMobileNumber"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/edit_text"
+    android:hint="Delivery Address"
+    android:inputType="text"
+    android:maxLength="30"
+    android:maxLines="1"
+    android:paddingLeft="20dp"
+    android:textColor="#000000"
+    android:textColorHint="#000000"
+    android:textSize="20sp"
+    tools:ignore="UnknownId" />
+    <EditText
+    android:id="@+id/etPassword"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+android:drawableLeft="@drawable/ic_passworddark"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/etDeliveryadd"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/edit_text"
+    android:hint="Password(min 4 character)"
+    android:inputType="textPassword"
+    android:maxLength="15"
+    android:maxLines="1"
+    android:paddingLeft="20dp"
+    android:textColor="#000000"
+    android:textColorHint="#000000"
+    android:textSize="20sp"
+    tools:ignore="UnknownId" />
+    <EditText
+    android:id="@+id/etConfirmPassword"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/etPassword"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/edit_text"
+    android:hint="Confirm Password"
+    android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_passworddark"
+    android:maxLength="15"
+    android:maxLines="1"
+    android:paddingLeft="20dp"
+    android:textColor="#000000"
+    android:textColorHint="#000000"
+    android:textSize="20sp"
+    tools:ignore="UnknownId" />
+    <Button
+        android:id="@+id/btRegister"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/etConfirmPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/round"
+        android:text="register"
+        android:textColor="#000000"
+        android:textSize="24sp"></Button>
+
+</RelativeLayout>

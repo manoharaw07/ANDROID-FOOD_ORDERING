@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="activity.CartActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradiant"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:id="@+id/successfullyadded">
+
+    <TextView
+        android:id="@+id/restName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="58dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Ordering From"
+        android:textColor="#000000"
+        android:textSize="20dp"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+
+        android:layout_below="@+id/restName"
+        android:background="@android:color/darker_gray"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclercartItom"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restName"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btnPlaceOrder"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#DF4616"
+        android:textColor="#FFFFFF"
+        android:text="Place Order(Total Rs.0.000)"
+        android:textSize="20dp"></Button>
+
+</RelativeLayout>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:id="@+id/nothindadded"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="159dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/nofood"></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="oops...."
+        android:textColor="#000"
+        android:textSize="40dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nothing added"
+        android:gravity="center"
+        android:textSize="30dp">
+    </TextView>
+</LinearLayout>
+
+</RelativeLayout>
